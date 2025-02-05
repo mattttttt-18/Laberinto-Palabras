@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laberinto de Palabras Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="pantalla-inicial" class="pantalla">
+        <h1>🌟 ¡Bienvenido al Laberinto de Palabras! 🌟</h1>
+        <button id="comenzar-btn" class="btn">Comenzar Juego</button>
+    </div>
+    <div id="pantalla-juego" class="pantalla oculto">
+        <div id="laberinto-container" class="laberinto-container">
+            <div id="cubos-container" class="cubos-container">
+                <!-- Cubos del laberinto -->
+                <div class="cubo cubo1">1</div>
+                <div class="cubo cubo2">2</div>
+                <div class="cubo cubo3">3</div>
+                <div class="cubo cubo4">4</div>
+                <div class="cubo cubo5">5</div>
+            </div>
+        </div>
+        <div id="pregunta-container" class="pregunta-container oculto">
+            <div id="pregunta" class="pregunta"></div>
+            <img id="imagen-pregunta" class="imagen-pregunta oculto" alt="Imagen de la Pregunta">
+            <input type="text" id="respuesta" class="input-respuesta" placeholder="Escribe tu respuesta...">
+            <button id="enviar-respuesta-btn" class="btn">Enviar</button>
+            <div id="mensaje" class="mensaje"></div>
+            <img id="icono-mensaje" class="icono-mensaje oculto">
+        </div>
+    </div>
+    <div id="pantalla-final" class="pantalla oculto">
+        <h1>🚀 ¡Felicidades, has completado el laberinto! 🚀</h1>
+        <button id="reiniciar-btn" class="btn">Reiniciar Juego</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
