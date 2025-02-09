@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Laberinto de Palabras Futurista</title>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="pantalla-inicial" class="pantalla">
@@ -11,6 +11,10 @@
         <button id="comenzar-btn" class="btn">Comenzar Juego</button>
     </div>
     <div id="pantalla-juego" class="pantalla oculto">
+        <div class="guia">
+            <img id="personaje" src="images/personaje.png" alt="Guía">
+            <div id="texto-guia"></div>
+        </div>
         <div id="laberinto-container" class="laberinto-container">
             <div id="cubos-container" class="cubos-container">
                 <!-- Cubos del laberinto -->
