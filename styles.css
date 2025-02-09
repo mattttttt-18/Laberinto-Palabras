@@ -30,7 +30,7 @@ body {
 .guia {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Añadido margen inferior */
     max-width: 100%;
     flex-wrap: wrap;
 }
@@ -119,14 +119,10 @@ body {
     border-radius: 10px;
 }
 
-.input-respuesta {
-    padding: 10px;
-    font-size: 1.2em;
-    width: 80%;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    text-align: center;
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .mensaje {
